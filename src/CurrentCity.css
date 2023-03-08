@@ -1,0 +1,24 @@
+.currentCity h2{
+        font-size: 5rem;
+}
+
+.currentCity small{
+        font-weight: 700;
+}
+
+.currentCity ul{
+        list-style: none;
+        padding: 0;
+        display: flex;
+         justify-content:space-evenly;
+        border-radius:0.5rem;
+        background: linear-gradient(145deg, #f3f8ff, #ccd1da);
+        box-shadow:   0.5rem 0.5rem 1.3rem #c1c5ce,
+             -0.5rem -0.5rem 1.3rem #ffffff;
+        padding: 1rem 0;
+}
+
+.currentCity li{
+        display: inline;
+    
+}
