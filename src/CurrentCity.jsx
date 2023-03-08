@@ -1,5 +1,6 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
+import WeatherIcon from "./WeatherIcon";
 
 function CurrentCity(props) {
   return (
@@ -12,7 +13,7 @@ function CurrentCity(props) {
         <p className="text-capitalize">{props.weatherData.description}</p>
         <div className="row mt-4">
           <div className="col-6">
-            <img src={props.weatherData.iconUrl} alt="weather icon" />
+            <WeatherIcon icon={props.weatherData.icon} />
           </div>
           <div className="col-6 position-relative">
             <h2 className="d-inline">
