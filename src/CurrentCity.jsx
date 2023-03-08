@@ -1,11 +1,14 @@
 import React from "react";
+import FormattedDate from "./FormattedDate";
 
 function CurrentCity(props) {
   return (
     <div className="currentCity">
       <div className="text-center mt-5">
         <h1>{props.weatherData.city}</h1>
-        <h5>Last updated at {props.weatherData.date}</h5>
+        <h5>
+          Last updated at <FormattedDate date={props.weatherData.date} />
+        </h5>
         <p className="text-capitalize">{props.weatherData.description}</p>
         <div className="row mt-4">
           <div className="col-6">
