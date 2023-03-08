@@ -1,5 +1,6 @@
 :root{
   --milky-white: #E3E8F2;
+  --color2:#1e1e1e;
 }
 
 html{
@@ -14,4 +15,5 @@ html{
 
 body{
   background-color: var(--milky-white);
+  color: var(--color2);
 }

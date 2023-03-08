@@ -4,10 +4,10 @@ import { useState } from "react";
 import CurrentCity from "./CurrentCity";
 
 function Weather() {
-  const [weatherData, setweatherData] = useState({ ready: false });
+  const [weatherData, setWeatherData] = useState({ ready: false });
 
   function getTemperature(response) {
-    setweatherData({
+    setWeatherData({
       ready: true,
       temperature: response.data.main.temp,
       city: response.data.name,
