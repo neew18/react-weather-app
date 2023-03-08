@@ -3,6 +3,8 @@ import axios from "axios";
 import { useState } from "react";
 import CurrentCity from "./CurrentCity";
 
+import { RotatingLines } from "react-loader-spinner";
+
 function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
 
@@ -57,7 +59,15 @@ function Weather(props) {
     );
   } else {
     search();
-    return <div>Loading...</div>;
+    return (
+      <RotatingLines
+        strokeColor="#1e1e1e"
+        strokeWidth="5"
+        animationDuration="0.75"
+        width="40"
+        visible={true}
+      />
+    );
   }
 }
 
