@@ -12,7 +12,7 @@
 }
 
 .weather form input[type=search]{
-        width: 70%;
+      
         outline: none;
        border-radius: 0.5rem;
         border: transparent;
@@ -77,9 +77,6 @@
         width: 50rem;
         }
 
-        .weather form input[type=search]{
-        width: 80%;
-        }
 }
 
 @media  only screen and (min-width:768px) {
@@ -87,7 +84,4 @@
         width: 70rem;
         }
 
-        .weather form input[type=search]{
-        width: 80%;
-        }
 }
