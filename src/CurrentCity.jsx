@@ -14,9 +14,9 @@ function CurrentCity(props) {
         <p className="text-capitalize">
           <em>{props.weatherData.description}</em>
         </p>
-        <div className="row mt-4">
+        <div className="row mt-5">
           <div className="col-6">
-            <WeatherIcon icon={props.weatherData.icon} />
+            <WeatherIcon icon={props.weatherData.icon} size={70} />
           </div>
           <div className="col-6 ">
             <TemperatureConversion celsius={props.weatherData.temperature} />
