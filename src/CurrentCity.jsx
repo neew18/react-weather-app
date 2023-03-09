@@ -15,10 +15,14 @@ function CurrentCity(props) {
           <em>{props.weatherData.description}</em>
         </p>
         <div className="row mt-5">
-          <div className="col-6">
-            <WeatherIcon icon={props.weatherData.icon} size={70} />
+          <div className="col-6  position-relative">
+            <img
+              className="position-absolute"
+              src={props.weatherData.icon}
+              alt={props.weatherData.description}
+            />
           </div>
-          <div className="col-6 ">
+          <div className="col-6">
             <TemperatureConversion celsius={props.weatherData.temperature} />
           </div>
         </div>
